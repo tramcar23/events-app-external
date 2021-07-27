@@ -7,25 +7,32 @@
   <meta name="HandheldFriendly" content="True" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <style>
+      body, html {
+          padding: 0;
+          margin: 0;
+      }
+  </style>
 </head>
 <body>
-  <div>
-      <h1>Welcome to D-Tiger's application</h1>
-      <h2>Eric Tram</h2>
-      <h2>Jake Wilson</h2>
-      <h2>Joma Pormentilla</h2>
-      <h2>Rushi Savulge</h2>
-      <h2>Andre Murdock</h2>
+    <div class="container-fluid">
+        <div>
+    <h1 class="display-1">Welcome to D-Tiger's application</h1>
+    <div class="alert alert-secondary">
+      Eric Tram - Jake Wilson - Joma Pormentilla - Rushi Savulge - Andre Murdock
+    </div>
     {{{body}}}
 </div>
-<div>
+<div style="width: 500px; border: solid 1px #ddd; padding: 10px;">
   <h2>Add an event</h2>
     <form action="/event" method="post">
-       title: <input name="title" type="text" /> <br />
-       description: <input name="description" type="text" /> <br />
-       <br />
-        <input type="submit" name="submit" value="submit" />
+       Title:
+       <input name="title" type="text" class="form-control" /> <br />
+       Description:
+       <input name="description" type="text" class="form-control" /> <br />
+        <input type="submit" name="submit" class="btn btn-primary" value="Submit" />
     </form>
+  </div>
   </div>
 </body>
 </html>
