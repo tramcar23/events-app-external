@@ -14,8 +14,8 @@ describe('GET /', function () {
       .reply(200, {
         "status": 200,
         "events": [
-          { "title": 'an event', "id": 1234, "description": 'something really cool' },
-          { "title": 'another event', id: 5678, "description": 'something even cooler' }
+          { "title": 'an event', "id": 1234, "description": 'something really cool', "location": 'somwhere' },
+          { "title": 'another event', id: 5678, "description": 'something even cooler', "location": 'somwhere' }
         ]
       });
 
@@ -27,7 +27,7 @@ describe('GET /', function () {
         if (err) {
           return done(err);
         }
-        chai.assert.isTrue(res.text.includes("<h1>Welcome to [TEAM NAME'S] application</h1>"));
+        chai.assert.isTrue(res.text.includes("<h1>Welcome to D-Tiger's application</h1>"));
         return done();
       });
 
