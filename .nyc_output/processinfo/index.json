@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"processes":{"d61e678d-a917-489b-aa09-b9e41cb88fb4":{"parent":null,"children":[]}},"files":{"/home/user109/sample-master/shared-repos/events-app-external/server.js":["d61e678d-a917-489b-aa09-b9e41cb88fb4"]},"externalIds":{}}
+=======
+{"processes":{"b05f3a15-6e03-4df7-bc31-051d0e18b623":{"parent":null,"children":[]}},"files":{"/home/user127/Team-D-Tigers/events-app-external/server.js":["b05f3a15-6e03-4df7-bc31-051d0e18b623"]},"externalIds":{}}
+>>>>>>> c85f8a52d5404909b99da2c0c95e53717216c1df
